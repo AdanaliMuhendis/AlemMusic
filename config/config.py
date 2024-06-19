@@ -157,7 +157,7 @@ TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
 
 
 # ________________________________________________________________________________## Your Github Repo.. Will be shown on /start Command
-GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/AdanaliMuhendis/AlemMusic")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://t.me/ByCedric")
 
 
 # ________________________________________________________________________________#
