@@ -12,43 +12,43 @@
 
 # Bot Commands
 PING_COMMAND : ["ping"]
-START_COMMAND : ["start"]
+START_COMMAND : ["start", "başlat"]
 HELP_COMMAND : ["help"]
-SETTINGS_COMMAND : ["settings", "setting"]
-RELOAD_COMMAND : ["admincache", "reload"]
+SETTINGS_COMMAND : ["settings", "setting", "ayarlar", "ayar"]
+RELOAD_COMMAND : ["admincache", "reload", "yenile"]
 GSTATS_COMMAND : ["gstats"]
 STATS_COMMAND : ["stats"]
-LANGUAGE_COMMAND : ["lang", "language", "langs"]
+LANGUAGE_COMMAND : ["lang", "language", "langs", "dil"]
 
 # Play Commands
-PLAY_COMMAND : ["play", "vplay", "cplay", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce"]
-PLAYMODE_COMMAND : ["playmode"]
+PLAY_COMMAND : ["play", "oynat", "vplay", "voynat", "cplay", "coynat", "cvplay", "cvoynat" "playforce", "oynatsana", "vplayforce", "cplayforce", "cvplayforce"]
+PLAYMODE_COMMAND : ["playmode", "oynatmatipi"]
 CHANNELPLAY_COMMAND : ["channelplay"]
 STREAM_COMMAND : ["stream", "cstream", "streamforce"]
 
 #Playlists Command
-PLAYLIST_COMMAND : ["playlist"]
-DELETEPLAYLIST_COMMAND : ["deleteplaylist"]
-ADDPLAYLIST_COMMAND : ["addplaylist"]
+PLAYLIST_COMMAND : ["playlist", "oynatmalistesi"]
+DELETEPLAYLIST_COMMAND : ["deleteplaylist", "listesil"]
+ADDPLAYLIST_COMMAND : ["addplaylist", "listeekle"]
 
 
 # Tools
-QUEUE_COMMAND : ["queue","cqueue"]
-SONG_COMMAND : ["song", "video"]
-LYRICS_COMMAND : ["lyrics"]
+QUEUE_COMMAND : ["queue","cqueue, "karıştır""]
+SONG_COMMAND : ["song", "video", "indir", "bul", "music"]
+LYRICS_COMMAND : ["lyrics", "şarkısözleri"]
 
 
 # Admin Commands
-AUTH_COMMAND : ["auth"]
-UNAUTH_COMMAND : ["unauth"]
-AUTHUSERS_COMMAND : ["authusers"]
-PAUSE_COMMAND : ["pause", "cpause"]
-RESUME_COMMAND : ["resume", "cresume"]
-MUTE_COMMAND : ["mute", "cmute"]
-UNMUTE_COMMAND : ["unmute", "cunmute"]
-STOP_COMMAND : ["stop", "end", "cstop", "cend"]
-SKIP_COMMAND : ["skip", "cskip"]
-SHUFFLE_COMMAND : ["shuffle", "cshuffle"]
+AUTH_COMMAND : ["auth", "yetkilendir"]
+UNAUTH_COMMAND : ["unauth", "yetkidüş"]
+AUTHUSERS_COMMAND : ["authusers", "yetkililer"]
+PAUSE_COMMAND : ["pause", "cpause", "dur"]
+RESUME_COMMAND : ["resume", "cresume", "devam"]
+MUTE_COMMAND : ["mute", "cmute", "sessiz"]
+UNMUTE_COMMAND : ["unmute", "cunmute", "sesiaç"]
+STOP_COMMAND : ["stop", "end", "cstop", "cend", "son"]
+SKIP_COMMAND : ["skip", "cskip", "atla", "değiş"]
+SHUFFLE_COMMAND : ["shuffle", "cshuffle", "karıştır"]
 LOOP_COMMAND : ["loop", "cloop"]
 SEEK_COMMAND : ["seek", "cseek", "seekback", "cseekback"]
 REBOOT_COMMAND : ["reboot"]
