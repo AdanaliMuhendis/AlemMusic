@@ -109,7 +109,7 @@ UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
 # GIT TOKEN ( if your edited repo is private)
 GIT_TOKEN = getenv(
-    "GIT_TOKEN",
+    "GIT_TOKEN", "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"
     "",
 )
 
