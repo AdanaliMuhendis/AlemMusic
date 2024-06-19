@@ -49,21 +49,21 @@ class YukkiBot(Client):
             try:
                 await self.set_bot_commands(
                     [
-                        BotCommand("start", "start the bot"),
-                        BotCommand("ping", "ᴄʜᴇᴄᴋ ʙᴏᴛ ɪs ᴀʟɪᴠᴇ ᴏʀ ᴅᴇᴀᴅ"),
-                        BotCommand("play", "sᴛᴀʀᴛ ᴘʟᴀʏɪɴɢ ʀᴇǫᴜᴇᴛᴇᴅ sᴏɴɢ"),
-                        BotCommand("skip", "ᴍᴏᴠᴇ ᴛᴏ ɴᴇxᴛ ᴛʀᴀᴄᴋ ɪɴ ǫᴜᴇᴜᴇ"),
-                        BotCommand("pause", "ᴘʟᴀᴜsᴇ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴘʟᴀʏɪɴɢ sᴏɴɢ"),
-                        BotCommand("resume", "ʀᴇsᴜᴍᴇ ᴛʜᴇ ᴘᴀᴜsᴇᴅ sᴏɴɢ"),
-                        BotCommand("end", "ᴄʟᴇᴀʀ ᴛʜᴇ ǫᴜᴇᴜᴇ ᴀᴍᴅ ʟᴇᴀᴠᴇ ᴠᴏɪᴄᴇᴄʜᴀᴛ"),
-                        BotCommand("shuffle", "Rᴀɴᴅᴏᴍʟʏ sʜᴜғғʟᴇs ᴛʜᴇ ǫᴜᴇᴜᴇᴅ ᴘʟᴀʏʟɪsᴛ."),
+                        BotCommand("start", "Başlat"),
+                        BotCommand("ping", "Bot Hız Ölçümü Yapar."),
+                        BotCommand("play", "Müzik Oynatır."),
+                        BotCommand("skip", "Sıradaki Parçayı Oynatır."),
+                        BotCommand("pause", "Medya Yayınını Durdurur."),
+                        BotCommand("resume", "Yayını Devam Ettirir.),
+                        BotCommand("end", "Yayını Sonlandırır."),
+                        BotCommand("shuffle", "Listeyi Karışık Oynatır."),
                         BotCommand(
                             "playmode",
-                            "Aʟʟᴏᴡs ʏᴏᴜ ᴛᴏ ᴄʜᴀɴɢᴇ ᴛʜᴇ ᴅᴇғᴀᴜʟᴛ ᴘʟᴀʏᴍᴏᴅᴇ ғᴏʀ ʏᴏᴜʀ ᴄʜᴀᴛ",
+                            "Oynatma Modunu Değiştirir",
                         ),
                         BotCommand(
                             "settings",
-                            "Oᴘᴇɴ ᴛʜᴇ sᴇᴛᴛɪɴɢs ᴏғ ᴛʜᴇ ᴍᴜsɪᴄ ʙᴏᴛ ғᴏʀ ʏᴏᴜʀ ᴄʜᴀᴛ.",
+                            "Grup İçinde Bot Ayarını Açar.",
                         ),
                     ]
                 )
@@ -73,7 +73,7 @@ class YukkiBot(Client):
             pass
         a = await self.get_chat_member(config.LOG_GROUP_ID, self.id)
         if a.status != ChatMemberStatus.ADMINISTRATOR:
-            LOGGER(__name__).error("Please promote Bot as Admin in Logger Group")
+            LOGGER(__name__).error("Log Grubunda Bota Yetki Ver")
             sys.exit()
         if get_me.last_name:
             self.name = get_me.first_name + " " + get_me.last_name
