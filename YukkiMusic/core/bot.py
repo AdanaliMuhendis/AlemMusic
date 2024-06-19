@@ -54,7 +54,7 @@ class YukkiBot(Client):
                         BotCommand("play", "Müzik Oynatır."),
                         BotCommand("skip", "Sıradaki Parçayı Oynatır."),
                         BotCommand("pause", "Medya Yayınını Durdurur."),
-                        BotCommand("resume", "Yayını Devam Ettirir".),
+                        BotCommand("resume", "Yayını Devam Ettirir."),
                         BotCommand("end", "Yayını Sonlandırır."),
                         BotCommand("shuffle", "Listeyi Karışık Oynatır."),
                         BotCommand(
