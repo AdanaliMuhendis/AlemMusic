@@ -38,7 +38,7 @@ class YukkiBot(Client):
         try:
             await self.send_message(
                 config.LOG_GROUP_ID,
-                text=f"<u><b>{self.mention} Alem Müzik Yayında :</b><u>\n\nɪᴅ : <code>{self.id}</code>\nɴᴀᴍᴇ : {self.name}\nᴜsᴇʀɴᴀᴍᴇ : @{self.username}",
+                text=f"<u><b>{self.mention} 𝓨𝓐𝓨𝓘𝓝𝓓𝓐 :</b><u>\n\n𝓘𝓓 : <code>{self.id}</code>\n𝓐𝓓𝓘 : {self.name}\n𝓚𝓤𝓛𝓛𝓐𝓝𝓘𝓒𝓘 𝓐𝓓𝓘 : @{self.username}",
             )
         except:
             LOGGER(__name__).error(
@@ -63,7 +63,7 @@ class YukkiBot(Client):
                         ),
                         BotCommand(
                             "settings",
-                            "Grup İçinde Bot Ayarını Açar.",
+                            "Grup İçinde Bot AyarLlarını Açar.",
                         ),
                     ]
                 )
